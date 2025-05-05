@@ -1,0 +1,80 @@
+function [t_vals, x_vals, X_analytical, X, delta_x, delta_t] = general_wave(t_iter, x_iter, c)
+
+    t_0 = 0;
+    t_f = 2;
+    t_vals = linspace(t_0, t_f, t_iter);
+    
+    L = 1;
+    X = zeros(t_iter, x_iter);
+    x_0 = @(x) sin(pi*x);
+    x_vals = linspace(0,L,x_iter);
+    X(1, :) = x_0(x_vals);
+    X(:,1) = 0;
+    X(:,end) = 0;
+    
+    K = zeros(4, x_iter);
+    delta_t = t_vals(2) - t_vals(1);
+    delta_x = x_vals(2) - x_vals(1);
+
+    if delta_t > delta_x/c
+        fprintf('Upper Bound: %g\n', delta_x/c)
+        fprintf('Delta t: %g\n', delta_t)
+        disp("Unstable, increase t_iter or decrease x_iter")
+        return
+    end
+
+    g = @(x) 0;
+
+    X(2,2:x_iter-1) = X(1,2:x_iter-1) + delta_t*g(x_vals) + 0.5*c^2*delta_t^2*(X(1,3:x_iter) - 2*X(1,2:x_iter-1) + X(1,1:x_iter-2))/delta_x^2;
+
+    for i = 3:t_iter
+        X(i,2:x_iter-1) = 2*X(i-1,2:x_iter-1) - X(i-2,2:x_iter-1) + (c*delta_t/delta_x)^2*(X(i-1,3:x_iter) - 2*X(i-1,2:x_iter-1) + X(i-1,1:x_iter-2));
+    end
+
+    X_analytical = zeros(t_iter, x_iter);
+    
+    f = @(x,t) sin(pi*x)*cos(pi*t);
+    
+    for i = 1:length(t_vals)
+        for j = 2:length(x_vals) - 1
+            X_analytical(i,j) = f(x_vals(j),t_vals(i));
+        end
+    end
+
+    str = "";
+    if t_iter >= 1000
+        str = "Caution: At current number of iterations, animation may take a long time. ";
+    end
+    decide = input(str + "Press enter to exit. Type 1 for Finite Difference vs Analytical", "s");
+    switch decide
+        case "1"
+            animation_speed = 0.05;
+            figure;
+            hold on
+            h = plot(x_vals, X(1,:), 'LineWidth', 2);
+            g = plot(x_vals, X_analytical(1,:), 'LineWidth', 2);
+            xlabel('Position along the rod, x');
+            ylabel('Temperature');
+            title('Heat Equation Animation');
+            legend('Estimation', 'Analytical', 'Location', 'best')
+            grid on;
+            
+            % Fix y-axis limits to avoid recalculating each frame
+            ylim([min(X(:)), max(X(:))]);
+            
+            % Improve rendering performance by reducing overhead
+            set(gcf, 'Renderer', 'painters');
+            
+            % Efficiently animate without redrawing the full figure
+            for timestep = 1:size(X,1)
+                h.YData = X(timestep,:);  % only updating data, very efficient
+                g.YData = X_analytical(timestep,:);
+                title(sprintf('Temperature Distribution at Time Step: %d', timestep));
+                drawnow limitrate;        % significantly improves performance
+                pause(animation_speed);   % adjust animation speed
+            end
+        case isempty(decide)
+            return
+    end
+
+end
