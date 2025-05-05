@@ -25,3 +25,9 @@ x_iter_2D = 10;
 y_iter_2D = 10;
 alpha_2D = 1;
 [t_vals_2D, x_vals_2D, y_vals_2D, X_analytical_2D, X_2D, delta_xy_2D, delta_t_2D] = general_heat_2D(t_iter_2D, x_iter_2D, y_iter_2D, alpha_2D);
+
+x_iter_pois = 10;
+y_iter_pois = 10;
+TOL_pois = 10^-5;
+max_iter_pois = 10000;
+[x_vals_pois, y_vals_pois, X_analytical_pois, X_pois, delta_xy_pois] = general_poisson(x_iter_pois, y_iter_pois, TOL_pois, max_iter_pois);
