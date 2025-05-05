@@ -12,7 +12,6 @@ function [t_vals, x_vals, X_analytical, X, delta_x, delta_t] = general_wave(t_it
     X(:,1) = 0;
     X(:,end) = 0;
     
-    K = zeros(4, x_iter);
     delta_t = t_vals(2) - t_vals(1);
     delta_x = x_vals(2) - x_vals(1);
 

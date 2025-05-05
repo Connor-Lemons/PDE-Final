@@ -19,3 +19,9 @@ x_iter_wave = 100;
 c_wave = 1;
 
 [t_vals_wave, x_vals_wave, X_analytical_wave, X_wave, delta_x_wave, delta_t_wave] = general_wave(t_iter_wave, x_iter_wave, c_wave);
+
+t_iter_2D = 1000;
+x_iter_2D = 10;
+y_iter_2D = 10;
+alpha_2D = 1;
+[t_vals_2D, x_vals_2D, y_vals_2D, X_analytical_2D, X_2D, delta_xy_2D, delta_t_2D] = general_heat_2D(t_iter_2D, x_iter_2D, y_iter_2D, alpha_2D);
