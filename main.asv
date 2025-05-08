@@ -2,7 +2,7 @@
 % this is not the number of steps, which would be either of these values
 % minus 1. The output matrices will be exactly these dimensions.
 t_iter_heat = 5000;
-x_iter_heat = 70;
+x_iter_heat = 75;
 
 % The t-values used for analysis are contained in t_vals, and the x-values
 % used for analysis are contained in x_vals. X_analytical contains the
