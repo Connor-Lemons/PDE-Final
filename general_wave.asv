@@ -1,16 +1,17 @@
-function [t_vals, x_vals, X_analytical, X, delta_x, delta_t] = general_wave(t_iter, x_iter, c)
+function [t_vals, x_vals, X, delta_x, delta_t] = general_wave(t_iter, x_iter, c)
 
     t_0 = 0;
-    t_f = 2;
+    t_f = 120;
     t_vals = linspace(t_0, t_f, t_iter);
     
     L = 2;
     X = zeros(t_iter, x_iter);
-    x_0 = @(x) sin(pi*x);
+    x_0 = @(x) sin(pi*x/2);
     x_vals = linspace(0,L,x_iter);
     X(1, :) = x_0(x_vals);
-    X(:,1) = 0;
-    X(:,end) = 0;
+    BC1 = @(t) 0.01*sin(t);
+    X(:,1) = BC1(t_vals);
+    X(1,end) = X(1,end-1);
     
     delta_t = t_vals(2) - t_vals(1);
     delta_x = x_vals(2) - x_vals(1);
@@ -22,22 +23,13 @@ function [t_vals, x_vals, X_analytical, X, delta_x, delta_t] = general_wave(t_it
         return
     end
 
-    g = @(x) 0;
-
-    X(2,2:x_iter-1) = X(1,2:x_iter-1) + delta_t*g(x_vals) + 0.5*c^2*delta_t^2*(X(1,3:x_iter) - 2*X(1,2:x_iter-1) + X(1,1:x_iter-2))/delta_x^2;
+    ghost_step = X(1,:) - delta_t*cos(pi*x_vals/2);
+    i = 2;
+    X(2,2:x_iter-1) = (c*delta_t/delta_x)^2*(X(i-1,3:x_iter) - 2*X(i-1,2:x_iter-1) + X(i-1,1:x_iter-2)) + 0.02*delta_t^2*sin(x_vals(2:x_iter-1)+t_vals(i-1)) + 2*X(i-1,2:x_iter-1) - ghost_step(2:x_iter-1);
 
     for i = 3:t_iter
-        X(i,2:x_iter-1) = 2*X(i-1,2:x_iter-1) - X(i-2,2:x_iter-1) + (c*delta_t/delta_x)^2*(X(i-1,3:x_iter) - 2*X(i-1,2:x_iter-1) + X(i-1,1:x_iter-2));
-    end
-
-    X_analytical = zeros(t_iter, x_iter);
-    
-    f = @(x,t) sin(pi*x)*cos(pi*t);
-    
-    for i = 1:length(t_vals)
-        for j = 2:length(x_vals) - 1
-            X_analytical(i,j) = f(x_vals(j),t_vals(i));
-        end
+        X(i,2:x_iter-1) = (c*delta_t/delta_x)^2*(X(i-1,3:x_iter) - 2*X(i-1,2:x_iter-1) + X(i-1,1:x_iter-2)) + 0.02*delta_t^2*sin(x_vals(2:x_iter-1)+t_vals(i-1)) + 2*X(i-1,2:x_iter-1) - X(i-2, 2:x_iter-1);
+        X(i,end) = X(i,end-1);
     end
 
     str = "";
@@ -47,19 +39,19 @@ function [t_vals, x_vals, X_analytical, X, delta_x, delta_t] = general_wave(t_it
     decide = input(str + "Press enter to exit. Type 1 for Finite Difference vs Analytical", "s");
     switch decide
         case "1"
-            animation_speed = 0.05;
+            animation_speed = 0.0;
             figure;
             hold on
             h = plot(x_vals, X(1,:), 'LineWidth', 2);
-            g = plot(x_vals, X_analytical(1,:), 'LineWidth', 2);
             xlabel('Position along the rod, x');
             ylabel('Temperature');
-            title('Heat Equation Animation');
-            legend('Estimation', 'Analytical', 'Location', 'best')
+            title('Wave Equation Animation');
+            legend('Estimation', 'Location', 'best')
             grid on;
             
             % Fix y-axis limits to avoid recalculating each frame
             ylim([min(X(:)), max(X(:))]);
+            xlim([0 2]);
             
             % Improve rendering performance by reducing overhead
             set(gcf, 'Renderer', 'painters');
@@ -67,8 +59,7 @@ function [t_vals, x_vals, X_analytical, X, delta_x, delta_t] = general_wave(t_it
             % Efficiently animate without redrawing the full figure
             for timestep = 1:size(X,1)
                 h.YData = X(timestep,:);  % only updating data, very efficient
-                g.YData = X_analytical(timestep,:);
-                title(sprintf('Temperature Distribution at Time Step: %d', timestep));
+                title(sprintf('Wave at Time Step: %d', timestep));
                 drawnow limitrate;        % significantly improves performance
                 pause(animation_speed);   % adjust animation speed
             end

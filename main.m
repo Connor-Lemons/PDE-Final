@@ -14,10 +14,10 @@ x_iter_heat = 70;
 [t_vals_heat, x_vals_heat, X_analytical_heat, X_heat, U_sol_heat, delta_x_heat, delta_t_heat] = basic_heat(t_iter_heat, x_iter_heat);
 
 % Wave Code
-t_iter_wave = 500;
+t_iter_wave = 5000;
 x_iter_wave = 100;
-c_wave = 1;
-[t_vals_wave, x_vals_wave, X_analytical_wave, X_wave, delta_x_wave, delta_t_wave] = general_wave(t_iter_wave, x_iter_wave, c_wave);
+c_wave = 0.4;
+[t_vals_wave, x_vals_wave, X_wave, delta_x_wave, delta_t_wave] = general_wave(t_iter_wave, x_iter_wave, c_wave);
 
 % 2D Heat Code
 t_iter_2D = 1000;
