@@ -42,7 +42,18 @@ Note that the $i$ index represents the spatial steps and the $n$ index represent
 \begin{equation}
     u_i^{n} = \frac{0.16\Delta t^2}{\Delta x^2}\left(u_{i+1}^{n-1} - 2u_i^{n-1} + u_{i-1}^{n-1}\right) + 0.02\Delta t^2\sin\left(x+t\right) + 2u_i^{n-1} - u_i^{n-2}
 \end{equation}
-This is the form which will be implemented to produce the numerical solution.
+This is the form which will be implemented to produce the numerical solution. Note that this equation requires knowledge of the two previous time steps, and thus a different method is required for initialization. In order to do this, begin with the forward difference equation in time and the given initial condition.
+\begin{equation}
+    \frac{u_i^{n+1} - u_i^n}{\Delta t} = \cos\left(\frac{\pi x}{2}\right)
+\end{equation}
+For the wave equation, the other initial condition gives the value, but the wave equation requires two previous time steps. Using this formulation, a "ghost step" can be obtained and used to generate the first iteration of the wave equation. This is given by:
+\begin{equation}
+    u_i^0 = u_i^1 - \Delta t\cos\left(\frac{\pi x}{2}\right)
+\end{equation}
+For the boundary condition at the left endpoint, it is readily apparent that the formulation for this must be:
+\begin{equation}
+    u_{end}^n = u_{end-1}^n
+\end{equation}
 
 \section{Two-Dimensional General Heat Equation}
 \subsection*{$u_t = 0.5\nabla^2u + e^{-t}u\\u_x(0,y,t) = 0\\u_y(x,0,t) = 0\\u(x,4,t) = e^{-t}\\u(4,y,t) = 0\\u(x,y,0) = \begin{cases}

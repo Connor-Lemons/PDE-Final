@@ -4,8 +4,8 @@ function [t_vals, x_vals, y_vals, X_analytical, X, delta_xy, delta_t] = general_
     t_f = 2;
     t_vals = linspace(t_0, t_f, t_iter);
     
-    L = 1;
-    H = 1;
+    L = 4;
+    H = 4;
     X = zeros(x_iter, y_iter, t_iter);
     x_0 = @(x,y) sin(pi*x)*sin(pi*y);
     x_vals = linspace(0,L,x_iter);
