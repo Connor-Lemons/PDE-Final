@@ -23,12 +23,12 @@ c_wave = 0.4;
 t_iter_2D = 1000;
 x_iter_2D = 10;
 y_iter_2D = 10;
-alpha_2D = 1;
+alpha_2D = 0.5;
 [t_vals_2D, x_vals_2D, y_vals_2D, X_2D, delta_xy_2D, delta_t_2D] = general_heat_2D(t_iter_2D, x_iter_2D, y_iter_2D, alpha_2D);
 
 % Poisson's Equation Code
-x_iter_pois = 100;
-y_iter_pois = 100;
-TOL_pois = 10^-10;
-max_iter_pois = 1000000;
-[x_vals_pois, y_vals_pois, X_analytical_pois, X_pois, delta_xy_pois] = general_poisson(x_iter_pois, y_iter_pois, TOL_pois, max_iter_pois);
+x_iter_pois = 101;
+y_iter_pois = x_iter_pois*2 - 1;
+TOL_pois = 10^-8;
+max_iter_pois = 100000;
+[x_vals_pois, y_vals_pois, X_pois, delta_x_pois, delta_y_pois] = general_poisson(x_iter_pois, y_iter_pois, TOL_pois, max_iter_pois);

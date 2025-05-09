@@ -80,7 +80,16 @@ This is the form which will be implemented to produce the numerical solution. Si
 \end{equation}
 
 \section{Poisson's Equation}
-\subsection*{$\nabla^2u = 1 + 0.2\delta_{(1,3)}(x,y)\\u(x,4) = x\\u(2,y) = 1\\u(0,y) = 1 \text{ for } 2 \leq y \leq 4\\u(1,y) = 0 \text{ for } 0 \leq y \leq 2\\u(x,2) = 0 \text{ for } 0 \leq x \leq 1\\u(x,0) = 1 \text{ for } 1 \leq x \leq 2$}
+\subsection*{$\nabla^2u = 1 + 0.2\delta_{(1,3)}(x,y) = f(x,y)\\u(x,4) = x\\u(2,y) = 1\\u(0,y) = 1 \text{ for } 2 \leq y \leq 4\\u(1,y) = 0 \text{ for } 0 \leq y \leq 2\\u(x,2) = 0 \text{ for } 0 \leq x \leq 1\\u(x,0) = 1 \text{ for } 1 \leq x \leq 2$}
+Using the central difference approximation for the second derivatives gives:
+\begin{equation}
+    \left(\frac{u_{i+1,j}^n - 2u_{i,j}^n + u_{i-1,j}^n}{\Delta x^2} + \frac{u_{i,j+1}^n - 2u_{i,j}^n + u_{i,j-1}^n}{\Delta y^2}\right) = f(x,y)
+\end{equation}
+Assuming that $h=\Delta x=\Delta y$ gives:
+\begin{equation}
+    u_{i,j} = \frac{1}{4}\left(u_{i+1,j} + u_{i-1,j} + u_{i,j+1} + u_{i,j-1} - h^2f(x,y)\right)
+\end{equation}
+In order to solve this, use the method of iterative relaxation, where the matrix is initilized with zeros in all entries except the boundary conditions and iterations are performed until the change from step to step is within some specified tolerance. In some sense, this can be though of as iterating through the transient part of the 2D heat equation until the steady-state solution is achieved.
 
 \section{Spacecraft Application}
 

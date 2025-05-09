@@ -1,42 +1,36 @@
-function [x_vals, y_vals, X_analytical, X, delta_xy] = general_poisson(x_iter, y_iter, TOL, max_iter)
+function [x_vals, y_vals, X, delta_x, delta_y] = general_poisson(x_iter, y_iter, TOL, max_iter)
     
-    L = 1;
-    H = 1;
+    L = 2;
+    H = 4;
     X = zeros(x_iter, y_iter, 1);
-    x_0 = @(x,y) 0;
     x_vals = linspace(0,L,x_iter);
-    y_vals = linspace(0,H,x_iter);
-    for i = 1:length(x_vals)
-        for j = 1:length(y_vals)
-            X(i,j,1) = x_0(x_vals(i),y_vals(j));
+    y_vals = linspace(0,H,y_iter);
+    
+    X(1:(x_iter+1)/2,1:(y_iter+1)/2,1) = 0;
+    X((x_iter+1)/2:end,1,1) = 1;
+    X(1,(y_iter+1)/2:end,1) = 1;
+    X(end,:,1) = 1;
+    X(:,end,1) = x_vals;
+    
+    delta_x = x_vals(2) - x_vals(1);
+    delta_y = y_vals(2) - y_vals(1);
+    f = @(x, y) 1 + 0.2 * double(x == 1 & y == 3);
+    f_mat = zeros(x_iter,y_iter);
+    for i = 1:x_iter
+        for j = 1:y_iter
+            f_mat(i,j) = f(x_vals(i), y_vals(j));
         end
     end
-    
-    X(1,:,1) = 0;
-    X(end,:,1) = 0;
-    X(:,1,1) = 0;
-    X(:,end,1) = sin(pi*x_vals);
-    
-    delta_xy = x_vals(2) - x_vals(1);
 
     for i = 2:max_iter
-            X(1,:,i) = 0;
-            X(end,:,i) = 0;
-            X(:,1,i) = 0;
-            X(:,end,i) = sin(pi*x_vals);
-        X(2:x_iter-1,2:x_iter-1,i) = 0.25*(X(3:x_iter,2:x_iter-1,i-1) + X(1:x_iter-2,2:x_iter-1,i-1) + X(2:x_iter-1,3:x_iter,i-1) + X(2:x_iter-1,1:x_iter-2,i-1) - 0);
+        X(1:(x_iter+1)/2,1:(y_iter+1)/2,1) = 0;
+        X((x_iter+1)/2:end,1,i) = 1;
+        X(1,(y_iter+1)/2:end,i) = 1;
+        X(end,:,i) = 1;
+        X(:,end,i) = x_vals;
+        X(2:x_iter-1,2:y_iter-1,i) = 0.25*(X(3:x_iter,2:y_iter-1,i-1) + X(1:x_iter-2,2:y_iter-1,i-1) + X(2:x_iter-1,3:y_iter,i-1) + X(2:x_iter-1,1:y_iter-2,i-1) - delta_x^2*f_mat(2:x_iter-1,2:y_iter-1));
         if max(abs(X(:,:,i) - X(:,:,i-1)),[],"all") <= TOL
             break
-        end
-    end
-
-    X_analytical = zeros(x_iter, y_iter);
-    
-    f = @(x,y) sinh(pi*y)/sinh(pi)*sin(pi*x);
-    
-    for j = 2:length(x_vals) - 1
-        for k = 2:length(y_vals)-1
-            X_analytical(j,k) = f(x_vals(j),y_vals(k));
         end
     end
 
@@ -50,8 +44,7 @@ function [x_vals, y_vals, X_analytical, X, delta_xy] = general_poisson(x_iter, y
             
             figure;
             hold on
-            h = surf(X_grid, Y_grid, X(:,:,end), "FaceAlpha", 0.25, 'FaceColor', 'b');
-            g = surf(X_grid, Y_grid, X_analytical(:,:), "FaceAlpha", 0.25, 'FaceColor', 'r');
+            h = surf(X_grid, Y_grid(1:2:end), X(:,1:2:end,end), "FaceAlpha", 0.25, 'FaceColor', 'b');
             xlabel('x');
             ylabel('y');
             zlabel('Temperature');
