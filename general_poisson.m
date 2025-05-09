@@ -40,11 +40,11 @@ function [x_vals, y_vals, X, delta_x, delta_y] = general_poisson(x_iter, y_iter,
         case "1"
 
             % Create meshgrid for surface plot
-            [X_grid, Y_grid] = meshgrid(x_vals, y_vals);  % Assuming x and y are 1D vectors
+            [X_grid, Y_grid] = meshgrid(x_vals, y_vals(1:2:end));  % Assuming x and y are 1D vectors
             
             figure;
             hold on
-            h = surf(X_grid, Y_grid(1:2:end), X(:,1:2:end,end), "FaceAlpha", 0.25, 'FaceColor', 'b');
+            h = surf(X_grid, Y_grid, X(:,1:2:end,end), "FaceAlpha", 0.25, 'FaceColor', 'b');
             xlabel('x');
             ylabel('y');
             zlabel('Temperature');
