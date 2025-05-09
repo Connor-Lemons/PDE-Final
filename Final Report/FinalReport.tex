@@ -71,7 +71,13 @@ In this case, $i$ and $j$ represent the $x$ and $y$ spatial steps, respectively.
 \begin{equation}
     u_{i,j}^n = \frac{0.5\Delta t}{h^2}\left(u_{i+1,j}^{n-1} + u_{i-1,j}^{n-1} + u_{i,j+1}^{n-1} + u_{i,j-1}^{n-1} - 4u_{i,j}^{n-1}\right) + \left(e^{-t}\Delta t + 1\right)u_{i,j}^{n-1}
 \end{equation}
-This is the form which will be implemented to produce the numerical solution.
+This is the form which will be implemented to produce the numerical solution. Similar to the wave equation above, for the derivative boundary conditions, it is readily apparent that the formulation for this must be:
+\begin{equation}
+    \begin{aligned}
+        u_{start,j}^n = u_{start+1,j}^n\\
+        u_{i,start}^n = u_{i,start+1}^n
+    \end{aligned}
+\end{equation}
 
 \section{Poisson's Equation}
 \subsection*{$\nabla^2u = 1 + 0.2\delta_{(1,3)}(x,y)\\u(x,4) = x\\u(2,y) = 1\\u(0,y) = 1 \text{ for } 2 \leq y \leq 4\\u(1,y) = 0 \text{ for } 0 \leq y \leq 2\\u(x,2) = 0 \text{ for } 0 \leq x \leq 1\\u(x,0) = 1 \text{ for } 1 \leq x \leq 2$}

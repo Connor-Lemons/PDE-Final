@@ -24,7 +24,7 @@ t_iter_2D = 1000;
 x_iter_2D = 10;
 y_iter_2D = 10;
 alpha_2D = 1;
-[t_vals_2D, x_vals_2D, y_vals_2D, X_analytical_2D, X_2D, delta_xy_2D, delta_t_2D] = general_heat_2D(t_iter_2D, x_iter_2D, y_iter_2D, alpha_2D);
+[t_vals_2D, x_vals_2D, y_vals_2D, X_2D, delta_xy_2D, delta_t_2D] = general_heat_2D(t_iter_2D, x_iter_2D, y_iter_2D, alpha_2D);
 
 % Poisson's Equation Code
 x_iter_pois = 100;
