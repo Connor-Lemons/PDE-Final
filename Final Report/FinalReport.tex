@@ -30,6 +30,17 @@ GitHub: \url{https://github.com/Connor-Lemons/PDE-Final}
 
 \subsection*{$u_t = 2u_{xx}\\u(0,t) = u(3,t) = 0\\u(x,0) = \sin(\pi x) + \sin(2\pi x)$}
 
+First we must find the analytic solution to this equation. This is an extremely basic heat equation with neumann boundary conditions. The solution boils down to 
+\[
+\sum_{n=1}^{\infty}e^{-2\left(\frac{n\pi}{3}\right)^{2}t}\sin\left(\frac{n\pi x}{3}\right)
+\]
+
+which when given the initial conditions we see is equal to 
+
+\[
+e^{-2\pi^{2}t}\sin\left(\pi x\right)+e^{-8\pi^{2}t}\sin(2\pi x).
+\]
+
 Using the central difference approximation for second derivatives gives:
 \begin{equation}
     \begin{aligned}
@@ -81,6 +92,15 @@ With the proper function definition in MatLab, it is easy to use ode45() to obta
     \includegraphics[width=0.8\textwidth]{heat_all_example.jpg}
     \caption{Iteration 34 of RK4 Solution and ode45() Solution vs. Analytical Solution to Heat Equation}
 \end{figure}
+
+We found the maximum absolute error to be equal to 0.2178 and the error in the L2 norm to be equal to 16.0653. You can see the error of the numerical solution in the graph below. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{Error.png}
+    \caption{Error of Numerical solution}
+\end{figure}
+
 
 \section{General Wave Equation}
 \subsection*{$u_{tt} = 0.16u_{xx} + 0.02\sin(x+t)\\u(0,t) = 0.01\sin(t)\\u_x(2,t) = 0\\u(x,0) = \sin\left(\frac{\pi x}{2}\right)\\u_t(x,0) = \cos\left(\frac{\pi x}{2}\right)$}
@@ -161,12 +181,53 @@ In order to solve this, use the method of iterative relaxation, where the matrix
     \caption{Final Numerical Solution of Poisson's Equation}
 \end{figure}
 
+
 \section{Spacecraft Application}
+\subsection*{$
+\triangledown^{2}u =0\\
+u(0,y)  =0\\
+u(a,y)  =0\\
+u(x,0)  =0\\
+u(x,b)  =\beta x(a-x)$}
+
+
+By separation of variables we obtain an analytic temperature profile of 
+
+\[
+u(x,y)=\sum_{n=1}^{\infty}A_{n}\sin(8nx)\sinh(8ny)
+\]
+
+where  
+\[
+A_{n}=\frac{625\left(4\sin\left(\frac{\pi n}{2}\right)^{2}-\pi n\sin\left(\pi n\right)\right)}{2n^{3}\pi\sinh\left(\frac{\pi n}{2}\right)}.
+\].
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{AnalyticalSolution.png}
+    \caption{Analytical Solution of Radiator Fin}
+\end{figure}
+
+We can see quite clearly how temperature barely drops off the further away we are from the heat source so as such it would make sense to reduce the rectangle just to a parabola around the main heat source. This would provide the most amount of heat dissapation without greatly increasing weight.
+Utilizing our formula from question 4, we can find that our answer seems to drop off quicker than the analytical solution. This is likewise also seen even more exaggerated in our MOL solution (which utilizes a very similar formula found in question 1) as seen in the figures below.
+\begin{figure}[H]
+    \centering 
+    \includegraphics[width=0.6\textwidth]{FinPoisson.png}
+    \caption{Poisson solution method of Radiator Fin}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{FinMOL.png}
+    \caption{MOL solution method of Radiator Fin}
+\end{figure}
+
+While these methods generally followed the structure of the analytical solution, its especially clear in the MOL solution that it trended to 0 too quickly and as such didn't model the solution as good as it could have.
+
 
 \includepdf[pages=-]{main.pdf}
 \includepdf[pages=-]{basic_heat.pdf}
 \includepdf[pages=-]{general_wave.pdf}
 \includepdf[pages=-]{general_heat_2D.pdf}
 \includepdf[pages=-]{general_poisson.pdf}
+
 
 \end{document}

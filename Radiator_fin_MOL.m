@@ -38,8 +38,8 @@ function [y_vals, x_vals, X, delta_x, delta_y] = Radiator_fin_MOL(t_iter, x_iter
             figure;
             hold on
             h = surf(Y_grid, X_grid, X(1:80:end,:), "FaceAlpha", 0.25, 'FaceColor', 'b');
-            xlabel('x');
-            ylabel('y');
+            xlabel('y');
+            ylabel('x');
             zlabel('Temperature');
             title('2D Heat MOL Solution');
             view(3); 
