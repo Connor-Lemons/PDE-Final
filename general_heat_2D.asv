@@ -46,7 +46,7 @@ function [t_vals, x_vals, y_vals, X, delta_xy, delta_t] = general_heat_2D(t_iter
     if t_iter >= 1000
         str = "Caution: At current number of iterations, animation may take a long time. ";
     end
-    decide = input(str + "Press enter to exit. Type 1 for Finite Difference Animation", "s");
+    decide = input(str + "Press enter to exit. Type 1 for Finite Difference Animaiton", "s");
     switch decide
         case "1"
             animation_speed = 0.0;

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.22)  9 MAY 2025 18:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.22)  9 MAY 2025 19:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -423,35 +423,59 @@ File: title.jpg Graphic file (type jpg)
 Package pdftex.def Info: title.jpg  used on input line 20.
 (pdftex.def)             Requested size: 375.80544pt x 375.81386pt.
 
+Overfull \hbox (31.58911pt too wide) in paragraph at lines 24--26
+ []\OT1/cmr/bx/n/10 Documentation \OT1/cmr/m/n/10 Chat-GPT: []$\OT1/cmtt/m/n/10 https : / / chatgpt . com / share / 681eaa76-[]a3d8-[]800f-[]b691-[]38bc518f0b52$[] \OT1/cmr/m/n/10 GitHub:
+ []
+
+
 
 [1
 
 {C:/Users/Connor Emmons/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./title.jpg>]
-<wave_example.jpg, id=34, 562.1pt x 421.575pt>
-File: wave_example.jpg Graphic file (type jpg)
-<use wave_example.jpg>
-Package pdftex.def Info: wave_example.jpg  used on input line 60.
+<heat_example.jpg, id=37, 562.1pt x 421.575pt>
+File: heat_example.jpg Graphic file (type jpg)
+<use heat_example.jpg>
+Package pdftex.def Info: heat_example.jpg  used on input line 75.
 (pdftex.def)             Requested size: 375.80544pt x 281.85553pt.
 
 
 [1]
+<heat_all_example.jpg, id=55, 562.1pt x 421.575pt>
+File: heat_all_example.jpg Graphic file (type jpg)
+<use heat_all_example.jpg>
+Package pdftex.def Info: heat_all_example.jpg  used on input line 81.
+(pdftex.def)             Requested size: 375.80544pt x 281.85553pt.
 
-[2 <./wave_example.jpg>]
-<2D_example.jpg, id=65, 562.1pt x 421.575pt>
+
+[2 <./heat_example.jpg>]
+
+[3 <./heat_all_example.jpg>]
+<wave_example.jpg, id=71, 562.1pt x 421.575pt>
+File: wave_example.jpg Graphic file (type jpg)
+<use wave_example.jpg>
+Package pdftex.def Info: wave_example.jpg  used on input line 113.
+(pdftex.def)             Requested size: 375.80544pt x 281.85553pt.
+
+
+[4 <./wave_example.jpg>]
+<2D_example.jpg, id=79, 562.1pt x 421.575pt>
 File: 2D_example.jpg Graphic file (type jpg)
 <use 2D_example.jpg>
-Package pdftex.def Info: 2D_example.jpg  used on input line 90.
+Package pdftex.def Info: 2D_example.jpg  used on input line 143.
 (pdftex.def)             Requested size: 375.80544pt x 281.85553pt.
-<poisson_example.jpg, id=66, 562.1pt x 421.575pt>
+
+
+[5]
+<poisson_example.jpg, id=89, 562.1pt x 421.575pt>
 File: poisson_example.jpg Graphic file (type jpg)
 <use poisson_example.jpg>
-Package pdftex.def Info: poisson_example.jpg  used on input line 107.
+Package pdftex.def Info: poisson_example.jpg  used on input line 160.
 (pdftex.def)             Requested size: 375.80544pt x 281.85553pt.
 
 
-[3 <./2D_example.jpg>]
+[6 <./2D_example.jpg>]
 
-[4 <./poisson_example.jpg>] (FinalReport.aux)
+[7 <./poisson_example.jpg>] (FinalReport.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
@@ -460,17 +484,17 @@ Package rerunfilecheck Info: File `FinalReport.out' has not changed.
 (rerunfilecheck)             Checksum: 374FB6E57ADCBD68405C2E28083B6A19;827.
  ) 
 Here is how much of TeX's memory you used:
- 11708 strings out of 473682
- 183256 string characters out of 5715371
- 592163 words of memory out of 5000000
- 34602 multiletter control sequences out of 15000+600000
- 566553 words of font info for 69 fonts, out of 8000000 for 9000
+ 11733 strings out of 473682
+ 183701 string characters out of 5715371
+ 594163 words of memory out of 5000000
+ 34618 multiletter control sequences out of 15000+600000
+ 566721 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,10n,79p,697b,467s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on FinalReport.pdf (5 pages, 513917 bytes).
+ 75i,10n,79p,697b,456s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on FinalReport.pdf (8 pages, 600868 bytes).
 PDF statistics:
- 150 PDF objects out of 1000 (max. 8388607)
- 29 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 182 PDF objects out of 1000 (max. 8388607)
+ 37 named destinations out of 1000 (max. 500000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 

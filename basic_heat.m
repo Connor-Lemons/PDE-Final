@@ -1,4 +1,4 @@
-function [t_vals, x_vals, X_analytical, X, U_sol, delta_x, delta_t] = basic_heat(t_iter, x_iter)    
+function [t_vals, x_vals, X_analytical, X, U_sol, t_sol, delta_x, delta_t] = basic_heat(t_iter, x_iter)    
     t_0 = 0;
     t_f = 2;
     t_vals = linspace(t_0, t_f, t_iter);

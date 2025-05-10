@@ -36,7 +36,7 @@ function [t_vals, x_vals, X, delta_x, delta_t] = general_wave(t_iter, x_iter, c)
     if t_iter >= 1000
         str = "Caution: At current number of iterations, animation may take a long time. ";
     end
-    decide = input(str + "Press enter to exit. Type 1 for Finite Difference vs Analytical", "s");
+    decide = input(str + "Press enter to exit. Type 1 for Finite Difference Animation", "s");
     switch decide
         case "1"
             animation_speed = 0.0;

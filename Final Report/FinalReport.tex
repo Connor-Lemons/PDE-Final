@@ -21,13 +21,66 @@
 \end{figure}
 \vfill
 \paragraph*{Documentation}
-UPDATE THIS
+ChatGPT: \url{https://chatgpt.com/share/681eaa76-a3d8-800f-b691-38bc518f0b52}
+GitHub: \url{https://github.com/Connor-Lemons/PDE-Final}
 \newpage
 \pagenumbering{arabic}
 
 \section{Basic Heat Equation}
 
 \subsection*{$u_t = 2u_{xx}\\u(0,t) = u(3,t) = 0\\u(x,0) = \sin(\pi x) + \sin(2\pi x)$}
+
+Using the central difference approximation for second derivatives gives:
+\begin{equation}
+    \begin{aligned}
+        \frac{du}{dt} &= 2\frac{u_{i+1}^n - 2u_i^n + u_{i-1}^n}{\Delta x^2}\\
+        u(t_0) &= \sin(\pi x) + \sin(2\pi x)
+    \end{aligned}
+\end{equation}
+Note that the index $i$ relates to the spatial steps and the index $n$ relates to the time steps. The standard RK4 formulation is given as:
+\begin{equation}
+    \begin{aligned}
+        k_1 &= f(t_n, y_n) \\
+        k_2 &= f\left(t_n + \frac{h}{2},\, y_n + \frac{h}{2}k_1\right) \\
+        k_3 &= f\left(t_n + \frac{h}{2},\, y_n + \frac{h}{2}k_2\right) \\
+        k_4 &= f(t_n + h,\, y_n + hk_3) \\
+        y_{n+1} &= y_n + \frac{h}{6}\left(k_1 + 2k_2 + 2k_3 + k_4\right)
+    \end{aligned}
+\end{equation}
+Adapting this to the problem at hand gives:
+\begin{equation}
+    \begin{aligned}
+        k_1 &= \alpha \frac{u_{i+1}^{n-1} - 2u_i^{n-1} + u_{i-1}^{n-1}}{\Delta x^2} \\
+        k_2 &= \alpha \frac{
+            \left(u_{i+1}^{n-1} + \frac{\Delta t}{2}k_1\right)
+            - 2\left(u_i^{n-1} + \frac{\Delta t}{2}k_1\right)
+            + \left(u_{i-1}^{n-1} + \frac{\Delta t}{2}k_1\right)
+        }{\Delta x^2} \\
+        k_3 &= \alpha \frac{
+            \left(u_{i+1}^{n-1} + \frac{\Delta t}{2}k_2\right)
+            - 2\left(u_i^{n-1} + \frac{\Delta t}{2}k_2\right)
+            + \left(u_{i-1}^{n-1} + \frac{\Delta t}{2}k_2\right)
+        }{\Delta x^2} \\
+        k_4 &= \alpha \frac{
+            \left(u_{i+1}^{n-1} + \Delta t\, k_3\right)
+            - 2\left(u_i^{n-1} + \Delta t\, k_3\right)
+            + \left(u_{i-1}^{n-1} + \Delta t\, k_3\right)
+        }{\Delta x^2} \\
+        u_i^{n} &= u_i^{n-1} + \frac{\Delta t}{6} \left( k_1 + 2k_2 + 2k_3 + k_4 \right)
+    \end{aligned}
+\end{equation}
+An example of the numerical solution plotted against the analytical solution is shown below. In order to view the full animation, please run the main.m file and select the corresponding option.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{heat_example.jpg}
+    \caption{Iteration 59 of RK4 Solution to Heat Equation}
+\end{figure}
+With the proper function definition in MatLab, it is easy to use ode45() to obtain an equivalent solution. Note that for this comparison to work directly, the full vector of $t$ values used by RK4 was passed to ode45() as an input. This means that while ode45() is still free to adjust the step size as necessary, the outputted solution will be on the specified values. Shown below is an example plot of all three solutions on top of each other. To view the full solution animated, please run the main.m file and select the corresponding option.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{heat_all_example.jpg}
+    \caption{Iteration 34 of RK4 Solution and ode45() Solution vs. Analytical Solution to Heat Equation}
+\end{figure}
 
 \section{General Wave Equation}
 \subsection*{$u_{tt} = 0.16u_{xx} + 0.02\sin(x+t)\\u(0,t) = 0.01\sin(t)\\u_x(2,t) = 0\\u(x,0) = \sin\left(\frac{\pi x}{2}\right)\\u_t(x,0) = \cos\left(\frac{\pi x}{2}\right)$}

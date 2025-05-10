@@ -12,7 +12,7 @@ x_iter_heat = 70;
 % and are the calculated values for RK4 and ode45 respectively. The step
 % sizes for both x and t are given by delta_x and delta_t respectively.
 disp("Basic Heat Equation:")
-[t_vals_heat, x_vals_heat, X_analytical_heat, X_heat, U_sol_heat, delta_x_heat, delta_t_heat] = basic_heat(t_iter_heat, x_iter_heat);
+[t_vals_heat, x_vals_heat, X_analytical_heat, X_heat, U_sol_heat, t_sol_heat, delta_x_heat, delta_t_heat] = basic_heat(t_iter_heat, x_iter_heat);
 
 % Wave Code
 t_iter_wave = 5000;
