@@ -33,6 +33,7 @@ function [x_vals, y_vals, X, delta_x, delta_y] = general_poisson(x_iter, y_iter,
             break
         end
     end
+    X(1:(x_iter+1)/2,1:(y_iter+1)/2,end) = NaN;
 
     str = "";
     decide = input(str + "Press enter to exit. Type 1 for Finite Difference vs Analytical", "s");
