@@ -53,4 +53,4 @@ disp("Radiator Fin Poisson's Equation:")
 y_iter_heat = 6000;
 x_iter_heat = 40;
 disp("Radiator Fin MOL Equation:")
-% [t_vals_heat, x_vals_heat, X_heat, delta_x_heat, delta_t_heat] = Radiator_fin_MOL(y_iter_heat, x_iter_heat);
+[t_vals_heat, x_vals_heat, X_heat, delta_x_heat, delta_t_heat] = Radiator_fin_MOL(y_iter_heat, x_iter_heat);
