@@ -36,3 +36,11 @@ TOL_pois = 10^-8;
 max_iter_pois = 100000;
 disp("Poisson's Equation:")
 [x_vals_pois, y_vals_pois, X_pois, delta_x_pois, delta_y_pois] = general_poisson(x_iter_pois, y_iter_pois, TOL_pois, max_iter_pois);
+
+% Radiator Heat Poisson's Equation Code
+x_iter_pois = 101;
+y_iter_pois = 201;
+TOL_pois = 10^-8;
+max_iter_pois = 20000;
+disp("Poisson's Equation:")
+[x_vals_pois, y_vals_pois, X_pois, delta_x_pois, delta_y_pois] = Radiator_fin(x_iter_pois, y_iter_pois, TOL_pois, max_iter_pois);
