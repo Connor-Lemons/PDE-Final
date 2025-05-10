@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.22)  9 MAY 2025 22:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.22)  10 MAY 2025 00:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -435,93 +435,119 @@ Overfull \hbox (31.58911pt too wide) in paragraph at lines 24--26
 <heat_example.jpg, id=37, 562.1pt x 421.575pt>
 File: heat_example.jpg Graphic file (type jpg)
 <use heat_example.jpg>
-Package pdftex.def Info: heat_example.jpg  used on input line 75.
+Package pdftex.def Info: heat_example.jpg  used on input line 86.
 (pdftex.def)             Requested size: 375.80544pt x 281.85553pt.
 
 
 [1]
-<heat_all_example.jpg, id=55, 562.1pt x 421.575pt>
+<heat_all_example.jpg, id=57, 562.1pt x 421.575pt>
 File: heat_all_example.jpg Graphic file (type jpg)
 <use heat_all_example.jpg>
-Package pdftex.def Info: heat_all_example.jpg  used on input line 81.
+Package pdftex.def Info: heat_all_example.jpg  used on input line 92.
 (pdftex.def)             Requested size: 375.80544pt x 281.85553pt.
 
 
 [2 <./heat_example.jpg>]
+<Error.png, id=63, 367.6134pt x 274.626pt>
+File: Error.png Graphic file (type png)
+<use Error.png>
+Package pdftex.def Info: Error.png  used on input line 100.
+(pdftex.def)             Requested size: 281.85587pt x 210.5701pt.
 
-[3 <./heat_all_example.jpg>]
-<wave_example.jpg, id=71, 562.1pt x 421.575pt>
+
+[3 <./heat_all_example.jpg> <./Error.png (PNG copy)>]
+<wave_example.jpg, id=70, 562.1pt x 421.575pt>
 File: wave_example.jpg Graphic file (type jpg)
 <use wave_example.jpg>
-Package pdftex.def Info: wave_example.jpg  used on input line 113.
+Package pdftex.def Info: wave_example.jpg  used on input line 133.
 (pdftex.def)             Requested size: 375.80544pt x 281.85553pt.
 
 
-[4 <./wave_example.jpg>]
-<2D_example.jpg, id=79, 562.1pt x 421.575pt>
+[4]
+
+[5 <./wave_example.jpg>]
+<2D_example.jpg, id=91, 562.1pt x 421.575pt>
 File: 2D_example.jpg Graphic file (type jpg)
 <use 2D_example.jpg>
-Package pdftex.def Info: 2D_example.jpg  used on input line 143.
+Package pdftex.def Info: 2D_example.jpg  used on input line 163.
 (pdftex.def)             Requested size: 375.80544pt x 281.85553pt.
-
-
-[5]
-<poisson_example.jpg, id=89, 562.1pt x 421.575pt>
+<poisson_example.jpg, id=92, 562.1pt x 421.575pt>
 File: poisson_example.jpg Graphic file (type jpg)
 <use poisson_example.jpg>
-Package pdftex.def Info: poisson_example.jpg  used on input line 160.
+Package pdftex.def Info: poisson_example.jpg  used on input line 180.
 (pdftex.def)             Requested size: 375.80544pt x 281.85553pt.
 
 
 [6 <./2D_example.jpg>]
-
-pdfTeX warning: pdflatex (file ./main.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<main.pdf, id=99, 614.295pt x 794.97pt>
-File: main.pdf Graphic file (type pdf)
-<use main.pdf>
-Package pdftex.def Info: main.pdf  used on input line 166.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-
-
-pdfTeX warning: pdflatex (file ./main.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-
-
-pdfTeX warning: pdflatex (file ./main.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<main.pdf, id=101, page=1, 614.295pt x 794.97pt>
-File: main.pdf Graphic file (type pdf)
-<use main.pdf, page 1>
-Package pdftex.def Info: main.pdf , page1 used on input line 166.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: main.pdf Graphic file (type pdf)
-<use main.pdf, page 1>
-Package pdftex.def Info: main.pdf , page1 used on input line 166.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+<AnalyticalSolution.png, id=103, 374.3586pt x 273.1806pt>
+File: AnalyticalSolution.png Graphic file (type png)
+<use AnalyticalSolution.png>
+Package pdftex.def Info: AnalyticalSolution.png  used on input line 206.
+(pdftex.def)             Requested size: 375.80544pt x 274.24284pt.
 
 
 [7 <./poisson_example.jpg>]
+<FinPoisson.png, id=111, 392.1852pt x 297.2706pt>
+File: FinPoisson.png Graphic file (type png)
+<use FinPoisson.png>
+Package pdftex.def Info: FinPoisson.png  used on input line 214.
+(pdftex.def)             Requested size: 281.85587pt x 213.65364pt.
+<FinMOL.png, id=112, 395.076pt x 322.806pt>
+File: FinMOL.png Graphic file (type png)
+<use FinMOL.png>
+Package pdftex.def Info: FinMOL.png  used on input line 219.
+(pdftex.def)             Requested size: 281.85587pt x 230.30212pt.
+
+
+[8 <./AnalyticalSolution.png (PNG copy)> <./FinPoisson.png (PNG copy)>]
+
+pdfTeX warning: pdflatex (file ./main.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<main.pdf, id=119, 614.295pt x 794.97pt>
+File: main.pdf Graphic file (type pdf)
+<use main.pdf>
+Package pdftex.def Info: main.pdf  used on input line 226.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+
+pdfTeX warning: pdflatex (file ./main.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex (file ./main.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<main.pdf, id=121, page=1, 614.295pt x 794.97pt>
 File: main.pdf Graphic file (type pdf)
 <use main.pdf, page 1>
-Package pdftex.def Info: main.pdf , page1 used on input line 166.
+Package pdftex.def Info: main.pdf , page1 used on input line 226.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: main.pdf Graphic file (type pdf)
+<use main.pdf, page 1>
+Package pdftex.def Info: main.pdf , page1 used on input line 226.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+
+
+[9 <./FinMOL.png (PNG copy)>]
+File: main.pdf Graphic file (type pdf)
+<use main.pdf, page 1>
+Package pdftex.def Info: main.pdf , page1 used on input line 226.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: main.pdf Graphic file (type pdf)
 <use main.pdf, page 1>
-Package pdftex.def Info: main.pdf , page1 used on input line 166.
+Package pdftex.def Info: main.pdf , page1 used on input line 226.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 
 
 File: main.pdf Graphic file (type pdf)
 <use main.pdf, page 1>
-Package pdftex.def Info: main.pdf , page1 used on input line 166.
+Package pdftex.def Info: main.pdf , page1 used on input line 226.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-[8
+[10
 
  <./main.pdf>]
 
 pdfTeX warning: pdflatex (file ./basic_heat.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<basic_heat.pdf, id=120, 614.295pt x 794.97pt>
+<basic_heat.pdf, id=140, 614.295pt x 794.97pt>
 File: basic_heat.pdf Graphic file (type pdf)
 <use basic_heat.pdf>
-Package pdftex.def Info: basic_heat.pdf  used on input line 167.
+Package pdftex.def Info: basic_heat.pdf  used on input line 227.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
 
@@ -529,216 +555,216 @@ pdfTeX warning: pdflatex (file ./basic_heat.pdf): PDF inclusion: found PDF versi
 
 
 pdfTeX warning: pdflatex (file ./basic_heat.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<basic_heat.pdf, id=122, page=1, 614.295pt x 794.97pt>
+<basic_heat.pdf, id=142, page=1, 614.295pt x 794.97pt>
 File: basic_heat.pdf Graphic file (type pdf)
 <use basic_heat.pdf, page 1>
-Package pdftex.def Info: basic_heat.pdf , page1 used on input line 167.
+Package pdftex.def Info: basic_heat.pdf , page1 used on input line 227.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: basic_heat.pdf Graphic file (type pdf)
 <use basic_heat.pdf, page 1>
-Package pdftex.def Info: basic_heat.pdf , page1 used on input line 167.
+Package pdftex.def Info: basic_heat.pdf , page1 used on input line 227.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: basic_heat.pdf Graphic file (type pdf)
 <use basic_heat.pdf, page 1>
-Package pdftex.def Info: basic_heat.pdf , page1 used on input line 167.
+Package pdftex.def Info: basic_heat.pdf , page1 used on input line 227.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: basic_heat.pdf Graphic file (type pdf)
 <use basic_heat.pdf, page 1>
-Package pdftex.def Info: basic_heat.pdf , page1 used on input line 167.
+Package pdftex.def Info: basic_heat.pdf , page1 used on input line 227.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 
 
 File: basic_heat.pdf Graphic file (type pdf)
 <use basic_heat.pdf, page 1>
-Package pdftex.def Info: basic_heat.pdf , page1 used on input line 167.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-[9
-
- <./basic_heat.pdf>]
-
-pdfTeX warning: pdflatex (file ./basic_heat.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<basic_heat.pdf, id=136, page=2, 614.295pt x 794.97pt>
-File: basic_heat.pdf Graphic file (type pdf)
-<use basic_heat.pdf, page 2>
-Package pdftex.def Info: basic_heat.pdf , page2 used on input line 167.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: basic_heat.pdf Graphic file (type pdf)
-<use basic_heat.pdf, page 2>
-Package pdftex.def Info: basic_heat.pdf , page2 used on input line 167.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-
-
-File: basic_heat.pdf Graphic file (type pdf)
-<use basic_heat.pdf, page 2>
-Package pdftex.def Info: basic_heat.pdf , page2 used on input line 167.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-[10
-
- <./basic_heat.pdf>]
-
-pdfTeX warning: pdflatex (file ./basic_heat.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<basic_heat.pdf, id=141, page=3, 614.295pt x 794.97pt>
-File: basic_heat.pdf Graphic file (type pdf)
-<use basic_heat.pdf, page 3>
-Package pdftex.def Info: basic_heat.pdf , page3 used on input line 167.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: basic_heat.pdf Graphic file (type pdf)
-<use basic_heat.pdf, page 3>
-Package pdftex.def Info: basic_heat.pdf , page3 used on input line 167.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-
-
-File: basic_heat.pdf Graphic file (type pdf)
-<use basic_heat.pdf, page 3>
-Package pdftex.def Info: basic_heat.pdf , page3 used on input line 167.
+Package pdftex.def Info: basic_heat.pdf , page1 used on input line 227.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 [11
 
  <./basic_heat.pdf>]
 
 pdfTeX warning: pdflatex (file ./basic_heat.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<basic_heat.pdf, id=146, page=4, 614.295pt x 794.97pt>
+<basic_heat.pdf, id=156, page=2, 614.295pt x 794.97pt>
 File: basic_heat.pdf Graphic file (type pdf)
-<use basic_heat.pdf, page 4>
-Package pdftex.def Info: basic_heat.pdf , page4 used on input line 167.
+<use basic_heat.pdf, page 2>
+Package pdftex.def Info: basic_heat.pdf , page2 used on input line 227.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: basic_heat.pdf Graphic file (type pdf)
-<use basic_heat.pdf, page 4>
-Package pdftex.def Info: basic_heat.pdf , page4 used on input line 167.
+<use basic_heat.pdf, page 2>
+Package pdftex.def Info: basic_heat.pdf , page2 used on input line 227.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 
 
 File: basic_heat.pdf Graphic file (type pdf)
-<use basic_heat.pdf, page 4>
-Package pdftex.def Info: basic_heat.pdf , page4 used on input line 167.
+<use basic_heat.pdf, page 2>
+Package pdftex.def Info: basic_heat.pdf , page2 used on input line 227.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 [12
 
  <./basic_heat.pdf>]
 
-pdfTeX warning: pdflatex (file ./general_wave.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<general_wave.pdf, id=152, 614.295pt x 794.97pt>
-File: general_wave.pdf Graphic file (type pdf)
-<use general_wave.pdf>
-Package pdftex.def Info: general_wave.pdf  used on input line 168.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-
-
-pdfTeX warning: pdflatex (file ./general_wave.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-
-
-pdfTeX warning: pdflatex (file ./general_wave.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<general_wave.pdf, id=154, page=1, 614.295pt x 794.97pt>
-File: general_wave.pdf Graphic file (type pdf)
-<use general_wave.pdf, page 1>
-Package pdftex.def Info: general_wave.pdf , page1 used on input line 168.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: general_wave.pdf Graphic file (type pdf)
-<use general_wave.pdf, page 1>
-Package pdftex.def Info: general_wave.pdf , page1 used on input line 168.
+pdfTeX warning: pdflatex (file ./basic_heat.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<basic_heat.pdf, id=162, page=3, 614.295pt x 794.97pt>
+File: basic_heat.pdf Graphic file (type pdf)
+<use basic_heat.pdf, page 3>
+Package pdftex.def Info: basic_heat.pdf , page3 used on input line 227.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: general_wave.pdf Graphic file (type pdf)
-<use general_wave.pdf, page 1>
-Package pdftex.def Info: general_wave.pdf , page1 used on input line 168.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: general_wave.pdf Graphic file (type pdf)
-<use general_wave.pdf, page 1>
-Package pdftex.def Info: general_wave.pdf , page1 used on input line 168.
+File: basic_heat.pdf Graphic file (type pdf)
+<use basic_heat.pdf, page 3>
+Package pdftex.def Info: basic_heat.pdf , page3 used on input line 227.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 
 
-File: general_wave.pdf Graphic file (type pdf)
-<use general_wave.pdf, page 1>
-Package pdftex.def Info: general_wave.pdf , page1 used on input line 168.
+File: basic_heat.pdf Graphic file (type pdf)
+<use basic_heat.pdf, page 3>
+Package pdftex.def Info: basic_heat.pdf , page3 used on input line 227.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 [13
 
- <./general_wave.pdf>]
+ <./basic_heat.pdf>]
 
-pdfTeX warning: pdflatex (file ./general_wave.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<general_wave.pdf, id=168, page=2, 614.295pt x 794.97pt>
-File: general_wave.pdf Graphic file (type pdf)
-<use general_wave.pdf, page 2>
-Package pdftex.def Info: general_wave.pdf , page2 used on input line 168.
+pdfTeX warning: pdflatex (file ./basic_heat.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<basic_heat.pdf, id=167, page=4, 614.295pt x 794.97pt>
+File: basic_heat.pdf Graphic file (type pdf)
+<use basic_heat.pdf, page 4>
+Package pdftex.def Info: basic_heat.pdf , page4 used on input line 227.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: general_wave.pdf Graphic file (type pdf)
-<use general_wave.pdf, page 2>
-Package pdftex.def Info: general_wave.pdf , page2 used on input line 168.
+File: basic_heat.pdf Graphic file (type pdf)
+<use basic_heat.pdf, page 4>
+Package pdftex.def Info: basic_heat.pdf , page4 used on input line 227.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 
 
-File: general_wave.pdf Graphic file (type pdf)
-<use general_wave.pdf, page 2>
-Package pdftex.def Info: general_wave.pdf , page2 used on input line 168.
+File: basic_heat.pdf Graphic file (type pdf)
+<use basic_heat.pdf, page 4>
+Package pdftex.def Info: basic_heat.pdf , page4 used on input line 227.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 [14
 
- <./general_wave.pdf>]
+ <./basic_heat.pdf>]
 
-pdfTeX warning: pdflatex (file ./general_heat_2D.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<general_heat_2D.pdf, id=173, 614.295pt x 794.97pt>
-File: general_heat_2D.pdf Graphic file (type pdf)
-<use general_heat_2D.pdf>
-Package pdftex.def Info: general_heat_2D.pdf  used on input line 169.
+pdfTeX warning: pdflatex (file ./general_wave.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<general_wave.pdf, id=172, 614.295pt x 794.97pt>
+File: general_wave.pdf Graphic file (type pdf)
+<use general_wave.pdf>
+Package pdftex.def Info: general_wave.pdf  used on input line 228.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
 
-pdfTeX warning: pdflatex (file ./general_heat_2D.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: pdflatex (file ./general_wave.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
 
-pdfTeX warning: pdflatex (file ./general_heat_2D.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<general_heat_2D.pdf, id=175, page=1, 614.295pt x 794.97pt>
-File: general_heat_2D.pdf Graphic file (type pdf)
-<use general_heat_2D.pdf, page 1>
-Package pdftex.def Info: general_heat_2D.pdf , page1 used on input line 169.
+pdfTeX warning: pdflatex (file ./general_wave.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<general_wave.pdf, id=174, page=1, 614.295pt x 794.97pt>
+File: general_wave.pdf Graphic file (type pdf)
+<use general_wave.pdf, page 1>
+Package pdftex.def Info: general_wave.pdf , page1 used on input line 228.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: general_heat_2D.pdf Graphic file (type pdf)
-<use general_heat_2D.pdf, page 1>
-Package pdftex.def Info: general_heat_2D.pdf , page1 used on input line 169.
+File: general_wave.pdf Graphic file (type pdf)
+<use general_wave.pdf, page 1>
+Package pdftex.def Info: general_wave.pdf , page1 used on input line 228.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: general_heat_2D.pdf Graphic file (type pdf)
-<use general_heat_2D.pdf, page 1>
-Package pdftex.def Info: general_heat_2D.pdf , page1 used on input line 169.
+File: general_wave.pdf Graphic file (type pdf)
+<use general_wave.pdf, page 1>
+Package pdftex.def Info: general_wave.pdf , page1 used on input line 228.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: general_heat_2D.pdf Graphic file (type pdf)
-<use general_heat_2D.pdf, page 1>
-Package pdftex.def Info: general_heat_2D.pdf , page1 used on input line 169.
+File: general_wave.pdf Graphic file (type pdf)
+<use general_wave.pdf, page 1>
+Package pdftex.def Info: general_wave.pdf , page1 used on input line 228.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 
 
-File: general_heat_2D.pdf Graphic file (type pdf)
-<use general_heat_2D.pdf, page 1>
-Package pdftex.def Info: general_heat_2D.pdf , page1 used on input line 169.
+File: general_wave.pdf Graphic file (type pdf)
+<use general_wave.pdf, page 1>
+Package pdftex.def Info: general_wave.pdf , page1 used on input line 228.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 [15
 
- <./general_heat_2D.pdf>]
+ <./general_wave.pdf>]
 
-pdfTeX warning: pdflatex (file ./general_heat_2D.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<general_heat_2D.pdf, id=189, page=2, 614.295pt x 794.97pt>
-File: general_heat_2D.pdf Graphic file (type pdf)
-<use general_heat_2D.pdf, page 2>
-Package pdftex.def Info: general_heat_2D.pdf , page2 used on input line 169.
+pdfTeX warning: pdflatex (file ./general_wave.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<general_wave.pdf, id=188, page=2, 614.295pt x 794.97pt>
+File: general_wave.pdf Graphic file (type pdf)
+<use general_wave.pdf, page 2>
+Package pdftex.def Info: general_wave.pdf , page2 used on input line 228.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: general_heat_2D.pdf Graphic file (type pdf)
-<use general_heat_2D.pdf, page 2>
-Package pdftex.def Info: general_heat_2D.pdf , page2 used on input line 169.
+File: general_wave.pdf Graphic file (type pdf)
+<use general_wave.pdf, page 2>
+Package pdftex.def Info: general_wave.pdf , page2 used on input line 228.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 
 
-File: general_heat_2D.pdf Graphic file (type pdf)
-<use general_heat_2D.pdf, page 2>
-Package pdftex.def Info: general_heat_2D.pdf , page2 used on input line 169.
+File: general_wave.pdf Graphic file (type pdf)
+<use general_wave.pdf, page 2>
+Package pdftex.def Info: general_wave.pdf , page2 used on input line 228.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 [16
 
+ <./general_wave.pdf>]
+
+pdfTeX warning: pdflatex (file ./general_heat_2D.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<general_heat_2D.pdf, id=193, 614.295pt x 794.97pt>
+File: general_heat_2D.pdf Graphic file (type pdf)
+<use general_heat_2D.pdf>
+Package pdftex.def Info: general_heat_2D.pdf  used on input line 229.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+
+pdfTeX warning: pdflatex (file ./general_heat_2D.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex (file ./general_heat_2D.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<general_heat_2D.pdf, id=195, page=1, 614.295pt x 794.97pt>
+File: general_heat_2D.pdf Graphic file (type pdf)
+<use general_heat_2D.pdf, page 1>
+Package pdftex.def Info: general_heat_2D.pdf , page1 used on input line 229.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: general_heat_2D.pdf Graphic file (type pdf)
+<use general_heat_2D.pdf, page 1>
+Package pdftex.def Info: general_heat_2D.pdf , page1 used on input line 229.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: general_heat_2D.pdf Graphic file (type pdf)
+<use general_heat_2D.pdf, page 1>
+Package pdftex.def Info: general_heat_2D.pdf , page1 used on input line 229.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: general_heat_2D.pdf Graphic file (type pdf)
+<use general_heat_2D.pdf, page 1>
+Package pdftex.def Info: general_heat_2D.pdf , page1 used on input line 229.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+
+
+File: general_heat_2D.pdf Graphic file (type pdf)
+<use general_heat_2D.pdf, page 1>
+Package pdftex.def Info: general_heat_2D.pdf , page1 used on input line 229.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[17
+
+ <./general_heat_2D.pdf>]
+
+pdfTeX warning: pdflatex (file ./general_heat_2D.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<general_heat_2D.pdf, id=209, page=2, 614.295pt x 794.97pt>
+File: general_heat_2D.pdf Graphic file (type pdf)
+<use general_heat_2D.pdf, page 2>
+Package pdftex.def Info: general_heat_2D.pdf , page2 used on input line 229.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: general_heat_2D.pdf Graphic file (type pdf)
+<use general_heat_2D.pdf, page 2>
+Package pdftex.def Info: general_heat_2D.pdf , page2 used on input line 229.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+
+
+File: general_heat_2D.pdf Graphic file (type pdf)
+<use general_heat_2D.pdf, page 2>
+Package pdftex.def Info: general_heat_2D.pdf , page2 used on input line 229.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[18
+
  <./general_heat_2D.pdf>]
 
 pdfTeX warning: pdflatex (file ./general_poisson.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<general_poisson.pdf, id=194, 614.295pt x 794.97pt>
+<general_poisson.pdf, id=215, 614.295pt x 794.97pt>
 File: general_poisson.pdf Graphic file (type pdf)
 <use general_poisson.pdf>
-Package pdftex.def Info: general_poisson.pdf  used on input line 170.
+Package pdftex.def Info: general_poisson.pdf  used on input line 230.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
 
@@ -746,52 +772,250 @@ pdfTeX warning: pdflatex (file ./general_poisson.pdf): PDF inclusion: found PDF 
 
 
 pdfTeX warning: pdflatex (file ./general_poisson.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<general_poisson.pdf, id=196, page=1, 614.295pt x 794.97pt>
+<general_poisson.pdf, id=217, page=1, 614.295pt x 794.97pt>
 File: general_poisson.pdf Graphic file (type pdf)
 <use general_poisson.pdf, page 1>
-Package pdftex.def Info: general_poisson.pdf , page1 used on input line 170.
+Package pdftex.def Info: general_poisson.pdf , page1 used on input line 230.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: general_poisson.pdf Graphic file (type pdf)
 <use general_poisson.pdf, page 1>
-Package pdftex.def Info: general_poisson.pdf , page1 used on input line 170.
+Package pdftex.def Info: general_poisson.pdf , page1 used on input line 230.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: general_poisson.pdf Graphic file (type pdf)
 <use general_poisson.pdf, page 1>
-Package pdftex.def Info: general_poisson.pdf , page1 used on input line 170.
+Package pdftex.def Info: general_poisson.pdf , page1 used on input line 230.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: general_poisson.pdf Graphic file (type pdf)
 <use general_poisson.pdf, page 1>
-Package pdftex.def Info: general_poisson.pdf , page1 used on input line 170.
+Package pdftex.def Info: general_poisson.pdf , page1 used on input line 230.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 
 
 File: general_poisson.pdf Graphic file (type pdf)
 <use general_poisson.pdf, page 1>
-Package pdftex.def Info: general_poisson.pdf , page1 used on input line 170.
+Package pdftex.def Info: general_poisson.pdf , page1 used on input line 230.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-[17
+[19
 
  <./general_poisson.pdf>]
 
 pdfTeX warning: pdflatex (file ./general_poisson.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<general_poisson.pdf, id=210, page=2, 614.295pt x 794.97pt>
+<general_poisson.pdf, id=231, page=2, 614.295pt x 794.97pt>
 File: general_poisson.pdf Graphic file (type pdf)
 <use general_poisson.pdf, page 2>
-Package pdftex.def Info: general_poisson.pdf , page2 used on input line 170.
+Package pdftex.def Info: general_poisson.pdf , page2 used on input line 230.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: general_poisson.pdf Graphic file (type pdf)
 <use general_poisson.pdf, page 2>
-Package pdftex.def Info: general_poisson.pdf , page2 used on input line 170.
+Package pdftex.def Info: general_poisson.pdf , page2 used on input line 230.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 
 
 File: general_poisson.pdf Graphic file (type pdf)
 <use general_poisson.pdf, page 2>
-Package pdftex.def Info: general_poisson.pdf , page2 used on input line 170.
+Package pdftex.def Info: general_poisson.pdf , page2 used on input line 230.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-[18
+[20
 
- <./general_poisson.pdf>] (FinalReport.aux)
+ <./general_poisson.pdf>]
+
+pdfTeX warning: pdflatex (file ./Radiator_fin.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Radiator_fin.pdf, id=236, 614.295pt x 794.97pt>
+File: Radiator_fin.pdf Graphic file (type pdf)
+<use Radiator_fin.pdf>
+Package pdftex.def Info: Radiator_fin.pdf  used on input line 231.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+
+pdfTeX warning: pdflatex (file ./Radiator_fin.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex (file ./Radiator_fin.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Radiator_fin.pdf, id=238, page=1, 614.295pt x 794.97pt>
+File: Radiator_fin.pdf Graphic file (type pdf)
+<use Radiator_fin.pdf, page 1>
+Package pdftex.def Info: Radiator_fin.pdf , page1 used on input line 231.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Radiator_fin.pdf Graphic file (type pdf)
+<use Radiator_fin.pdf, page 1>
+Package pdftex.def Info: Radiator_fin.pdf , page1 used on input line 231.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Radiator_fin.pdf Graphic file (type pdf)
+<use Radiator_fin.pdf, page 1>
+Package pdftex.def Info: Radiator_fin.pdf , page1 used on input line 231.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Radiator_fin.pdf Graphic file (type pdf)
+<use Radiator_fin.pdf, page 1>
+Package pdftex.def Info: Radiator_fin.pdf , page1 used on input line 231.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+
+
+File: Radiator_fin.pdf Graphic file (type pdf)
+<use Radiator_fin.pdf, page 1>
+Package pdftex.def Info: Radiator_fin.pdf , page1 used on input line 231.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[21
+
+ <./Radiator_fin.pdf>]
+
+pdfTeX warning: pdflatex (file ./Radiator_fin.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Radiator_fin.pdf, id=252, page=2, 614.295pt x 794.97pt>
+File: Radiator_fin.pdf Graphic file (type pdf)
+<use Radiator_fin.pdf, page 2>
+Package pdftex.def Info: Radiator_fin.pdf , page2 used on input line 231.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Radiator_fin.pdf Graphic file (type pdf)
+<use Radiator_fin.pdf, page 2>
+Package pdftex.def Info: Radiator_fin.pdf , page2 used on input line 231.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+
+
+File: Radiator_fin.pdf Graphic file (type pdf)
+<use Radiator_fin.pdf, page 2>
+Package pdftex.def Info: Radiator_fin.pdf , page2 used on input line 231.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[22
+
+ <./Radiator_fin.pdf>]
+
+pdfTeX warning: pdflatex (file ./Radiator_fin_MOL.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Radiator_fin_MOL.pdf, id=257, 614.295pt x 794.97pt>
+File: Radiator_fin_MOL.pdf Graphic file (type pdf)
+<use Radiator_fin_MOL.pdf>
+Package pdftex.def Info: Radiator_fin_MOL.pdf  used on input line 232.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+
+pdfTeX warning: pdflatex (file ./Radiator_fin_MOL.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex (file ./Radiator_fin_MOL.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Radiator_fin_MOL.pdf, id=259, page=1, 614.295pt x 794.97pt>
+File: Radiator_fin_MOL.pdf Graphic file (type pdf)
+<use Radiator_fin_MOL.pdf, page 1>
+Package pdftex.def Info: Radiator_fin_MOL.pdf , page1 used on input line 232.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Radiator_fin_MOL.pdf Graphic file (type pdf)
+<use Radiator_fin_MOL.pdf, page 1>
+Package pdftex.def Info: Radiator_fin_MOL.pdf , page1 used on input line 232.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Radiator_fin_MOL.pdf Graphic file (type pdf)
+<use Radiator_fin_MOL.pdf, page 1>
+Package pdftex.def Info: Radiator_fin_MOL.pdf , page1 used on input line 232.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Radiator_fin_MOL.pdf Graphic file (type pdf)
+<use Radiator_fin_MOL.pdf, page 1>
+Package pdftex.def Info: Radiator_fin_MOL.pdf , page1 used on input line 232.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+
+
+File: Radiator_fin_MOL.pdf Graphic file (type pdf)
+<use Radiator_fin_MOL.pdf, page 1>
+Package pdftex.def Info: Radiator_fin_MOL.pdf , page1 used on input line 232.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[23
+
+ <./Radiator_fin_MOL.pdf>]
+
+pdfTeX warning: pdflatex (file ./Radiator_fin_MOL.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Radiator_fin_MOL.pdf, id=273, page=2, 614.295pt x 794.97pt>
+File: Radiator_fin_MOL.pdf Graphic file (type pdf)
+<use Radiator_fin_MOL.pdf, page 2>
+Package pdftex.def Info: Radiator_fin_MOL.pdf , page2 used on input line 232.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Radiator_fin_MOL.pdf Graphic file (type pdf)
+<use Radiator_fin_MOL.pdf, page 2>
+Package pdftex.def Info: Radiator_fin_MOL.pdf , page2 used on input line 232.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+
+
+File: Radiator_fin_MOL.pdf Graphic file (type pdf)
+<use Radiator_fin_MOL.pdf, page 2>
+Package pdftex.def Info: Radiator_fin_MOL.pdf , page2 used on input line 232.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[24
+
+ <./Radiator_fin_MOL.pdf>]
+<SurfaceMapofError.pdf, id=279, 614.295pt x 794.97pt>
+File: SurfaceMapofError.pdf Graphic file (type pdf)
+<use SurfaceMapofError.pdf>
+Package pdftex.def Info: SurfaceMapofError.pdf  used on input line 233.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+<SurfaceMapofError.pdf, id=281, page=1, 614.295pt x 794.97pt>
+File: SurfaceMapofError.pdf Graphic file (type pdf)
+<use SurfaceMapofError.pdf, page 1>
+Package pdftex.def Info: SurfaceMapofError.pdf , page1 used on input line 233.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: SurfaceMapofError.pdf Graphic file (type pdf)
+<use SurfaceMapofError.pdf, page 1>
+Package pdftex.def Info: SurfaceMapofError.pdf , page1 used on input line 233.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SurfaceMapofError.pdf Graphic file (type pdf)
+<use SurfaceMapofError.pdf, page 1>
+Package pdftex.def Info: SurfaceMapofError.pdf , page1 used on input line 233.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SurfaceMapofError.pdf Graphic file (type pdf)
+<use SurfaceMapofError.pdf, page 1>
+Package pdftex.def Info: SurfaceMapofError.pdf , page1 used on input line 233.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+
+
+File: SurfaceMapofError.pdf Graphic file (type pdf)
+<use SurfaceMapofError.pdf, page 1>
+Package pdftex.def Info: SurfaceMapofError.pdf , page1 used on input line 233.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[25
+
+ <./SurfaceMapofError.pdf>]
+<Actual_AnalyticalSolution.pdf, id=316, 614.295pt x 794.97pt>
+File: Actual_AnalyticalSolution.pdf Graphic file (type pdf)
+<use Actual_AnalyticalSolution.pdf>
+Package pdftex.def Info: Actual_AnalyticalSolution.pdf  used on input line 234.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+<Actual_AnalyticalSolution.pdf, id=318, page=1, 614.295pt x 794.97pt>
+File: Actual_AnalyticalSolution.pdf Graphic file (type pdf)
+<use Actual_AnalyticalSolution.pdf, page 1>
+Package pdftex.def Info: Actual_AnalyticalSolution.pdf , page1 used on input line 234.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Actual_AnalyticalSolution.pdf Graphic file (type pdf)
+<use Actual_AnalyticalSolution.pdf, page 1>
+Package pdftex.def Info: Actual_AnalyticalSolution.pdf , page1 used on input line 234.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Actual_AnalyticalSolution.pdf Graphic file (type pdf)
+<use Actual_AnalyticalSolution.pdf, page 1>
+Package pdftex.def Info: Actual_AnalyticalSolution.pdf , page1 used on input line 234.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Actual_AnalyticalSolution.pdf Graphic file (type pdf)
+<use Actual_AnalyticalSolution.pdf, page 1>
+Package pdftex.def Info: Actual_AnalyticalSolution.pdf , page1 used on input line 234.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+
+
+File: Actual_AnalyticalSolution.pdf Graphic file (type pdf)
+<use Actual_AnalyticalSolution.pdf, page 1>
+Package pdftex.def Info: Actual_AnalyticalSolution.pdf , page1 used on input line 234.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[26
+
+ <./Actual_AnalyticalSolution.pdf>]
+<Actual_AnalyticalSolution.pdf, id=343, page=2, 614.295pt x 794.97pt>
+File: Actual_AnalyticalSolution.pdf Graphic file (type pdf)
+<use Actual_AnalyticalSolution.pdf, page 2>
+Package pdftex.def Info: Actual_AnalyticalSolution.pdf , page2 used on input line 234.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Actual_AnalyticalSolution.pdf Graphic file (type pdf)
+<use Actual_AnalyticalSolution.pdf, page 2>
+Package pdftex.def Info: Actual_AnalyticalSolution.pdf , page2 used on input line 234.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+
+
+File: Actual_AnalyticalSolution.pdf Graphic file (type pdf)
+<use Actual_AnalyticalSolution.pdf, page 2>
+Package pdftex.def Info: Actual_AnalyticalSolution.pdf , page2 used on input line 234.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[27
+
+ <./Actual_AnalyticalSolution.pdf>] (FinalReport.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
@@ -800,17 +1024,17 @@ Package rerunfilecheck Info: File `FinalReport.out' has not changed.
 (rerunfilecheck)             Checksum: 374FB6E57ADCBD68405C2E28083B6A19;827.
  ) 
 Here is how much of TeX's memory you used:
- 11822 strings out of 473682
- 186008 string characters out of 5715371
- 594165 words of memory out of 5000000
- 34696 multiletter control sequences out of 15000+600000
+ 11923 strings out of 473682
+ 188711 string characters out of 5715371
+ 596165 words of memory out of 5000000
+ 34783 multiletter control sequences out of 15000+600000
  566721 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,17n,79p,697b,584s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on FinalReport.pdf (19 pages, 952344 bytes).
+ 75i,17n,79p,697b,576s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/Connor Emmons/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on FinalReport.pdf (28 pages, 2268661 bytes).
 PDF statistics:
- 295 PDF objects out of 1000 (max. 8388607)
- 48 named destinations out of 1000 (max. 500000)
- 176 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 447 PDF objects out of 1000 (max. 8388607)
+ 62 named destinations out of 1000 (max. 500000)
+ 271 words of extra memory for PDF output out of 10000 (max. 10000000)
 
